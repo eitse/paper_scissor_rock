@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="game-board">
+            <h1>Rock Paper Scissor Game</h1>
+            <div id="game-status">Pick an Option</div>
+            <div class="img-container" id="img-containter-content">
+                <div id="paper" class='img-content' onclick="rpsGame(this)"> <img id="paper" src="paper.png"
+                        class="game-img" alt="">
+                    paper
+                </div>
+                <div id="rock" class='img-content' onclick="rpsGame(this)"> <img src=" rock.png" class="game-img"
+                        alt="">
+                    rock
+                </div>
+                <div id="scissor" class='img-content' onclick="rpsGame(this)"> <img src=" scissor.png" class="game-img"
+                        alt="">scissor
+                </div>
+            </div>
+
+            <!-- Decision Div -->
+
+            <div id="decision-containter-content">
+                <div>
+                    <div id="human-img">You Picked</div><img src="paper.png" id="human-pick" class="game-img" alt="">
+                </div>
+                <div id="referee">
+                    <div id="message"> You Win </div> <button id="start-game">Play Again</button>
+                </div>
+                <div id="computer-img">
+                    <div>Computer Picked</div><img id="computer-pick" src="rock.png" class="game-img" alt="">
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="side-menu">
+            <h2>Round Status</h2>
+            <div class="game-status">
+
+                <table border="1" cellspacing="2" cellpadding="2">
+                    <tr>
+                        <th bgcolor="#50ab68">Win</th>
+                        <th bgcolor="#99943f">Tie/Draw</th>
+                        <th bgcolor="#b86c63">Lose</th>
+                    </tr>
+                    <tr align="center">
+                        <td id="win">0</td>
+                        <td id="draw">0</td>
+                        <td id="lose">0</td>
+                    </tr>
+                </table>
+
+                <table border="1" cellspacing="2" cellpadding="2">
+                    <tr>
+                        <th bgcolor="#50ab68">Rounds Played</th>
+                    </tr>
+                    <tr align="center">
+                        <td id="rounds">0</td>
+                    </tr>
+                </table>
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
